@@ -1,0 +1,3 @@
+Template Method Explanation
+
+The Template Method pattern is used in the `Report` abstract class through the final `generateReport()` method. This method defines the fixed workflow: `loadData()`, `formatHeader()`, `formatBody()`, and `formatFooter()`. The subclasses `StudentReport` and `CourseReport` provide their own versions of the variable steps. This allows the overall report process to stay the same while each report type customizes its data and formatting.
